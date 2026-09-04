@@ -12,7 +12,7 @@ jobs:
     env:
       #job specific environment variables
       # MONGO_DB_NAME: gha-demo
-      MONGO_CLUSTER_ADDRESS: cluster0.0qfe8ve.mongodb.net
+      MONGODB_CLUSTER_ADDRESS: cluster0.0qfe8ve.mongodb.net
       MONGODB_USERNAME: skabi36_db_user
       MONGODB_PASSWORD: 0LnMAFVmbnA2CHVu
       PORT: 8080
