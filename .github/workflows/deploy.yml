@@ -13,8 +13,10 @@ jobs:
       #job specific environment variables
       # MONGO_DB_NAME: gha-demo
       MONGODB_CLUSTER_ADDRESS: cluster0.0qfe8ve.mongodb.net
-      MONGODB_USERNAME: skabi36_db_user
-      MONGODB_PASSWORD: 0LnMAFVmbnA2CHVu
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      # MONGODB_USERNAME: skabi36_db_user
+      # MONGODB_PASSWORD: 0LnMAFVmbnA2CHVu
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
